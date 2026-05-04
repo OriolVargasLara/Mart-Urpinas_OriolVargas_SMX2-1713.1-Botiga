@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Formulari de compra - SMX2 Jocs. Omple les teves dades i selecciona els jocs que vols comprar.">
+    <title>Formulari de Compra - SMX2 Jocs</title>
+    <link rel="icon" href="../imágenes/logo_X.png" type="image/png">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- ===== CAPÇALERA ===== -->
+    <header>
+        <img src="../imágenes/SMX2.png" alt="Logo SMX2 Jocs" class="header-logo">
+        <div class="header-texto">
+            <h1>SMX2 Jocs</h1>
+            <p>La teva botiga online de videojocs. Els millors títols al millor preu.</p>
+        </div>
+    </header>
+
+    <!-- ===== NAVEGACIÓ ===== -->
+    <nav>
+        <ul>
+            <li><a href="index.html">← Tornar al catàleg</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== CONTINGUT PRINCIPAL ===== -->
+    <main>
+
+        <div class="formulario-compra">
+
+            <h2>Formulari de Compra</h2>
+
+            <form action="#" method="post">
+
+                <!-- === DADES PERSONALS === -->
+                <div class="grupo-campo">
+                    <label for="nom">Nom *</label>
+                    <input type="text" id="nom" name="nom" placeholder="Escriu el teu nom" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="cognoms">Cognoms *</label>
+                    <input type="text" id="cognoms" name="cognoms" placeholder="Escriu els teus cognoms" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="email">Correu electrònic *</label>
+                    <input type="email" id="email" name="email" placeholder="exemple@correu.com" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="telefon">Telèfon</label>
+                    <input type="tel" id="telefon" name="telefon" placeholder="612 345 678">
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="adreca">Adreça d'enviament *</label>
+                    <input type="text" id="adreca" name="adreca" placeholder="Carrer, número, pis..." required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="ciutat">Ciutat *</label>
+                    <input type="text" id="ciutat" name="ciutat" placeholder="La teva ciutat" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="cp">Codi postal *</label>
+                    <input type="text" id="cp" name="cp" placeholder="08001" required>
+                </div>
+
+                <!-- === SELECCIÓ DE JOCS (CHECKBOXES) === -->
+                <div class="grupo-checkboxes">
+                    <p>Selecciona els jocs que vols comprar: *</p>
+
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="jocs" value="joc1">
+                        GTA V — 19,99 €
+                    </label>
+
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="jocs" value="joc2">
+                        Minecraft — 29,99 €
+                    </label>
+
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="jocs" value="joc3">
+                        Super Mario Odyssey — 59,99 €
+                    </label>
+
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="jocs" value="joc4">
+                        The Last of Us — 59,99 €
+                    </label>
+
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="jocs" value="joc5">
+                        Hollow Knight — 14,79 €
+                    </label>
+
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="jocs" value="joc6">
+                        Elden Ring — 59,99 €
+                    </label>
+
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="jocs" value="joc7">
+                        Cyberpunk 2077 — 59,99 €
+                    </label>
+
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="jocs" value="joc8">
+                        R.E.P.O — 9,49 €
+                    </label>
+
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="jocs" value="joc9">
+                        Assetto Corsa — 19,99 €
+                    </label>
+
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="jocs" value="joc10">
+                        Phasmophobia — 18,99 €
+                    </label>
+
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="jocs" value="joc11">
+                        Geometry Dash — 4,99 €
+                    </label>
+
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="jocs" value="joc12">
+                        Hitman World of Assasination — 29,99 €
+                    </label>
+
+                </div>
+
+                <!-- === MÈTODE DE PAGAMENT === -->
+                <div class="grupo-campo">
+                    <label for="pagament">Mètode de pagament *</label>
+                    <select id="pagament" name="pagament" required>
+                        <option value="">-- Selecciona un mètode --</option>
+                        <option value="targeta">Targeta de crèdit/dèbit</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="transferencia">Transferència bancària</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="boton-enviar">Confirmar compra</button>
+
+            </form>
+        </div>
+
+    </main>
+
+    <!-- ===== PEU DE PÀGINA ===== -->
+    <footer>
+        <p>&copy; 2025 SMX2 Jocs. Tots els drets reservats.</p>
+        <p><a href="../esp/formulario.html">🌐 Versión en castellano</a></p>
+    </footer>
+
+</body>
+
+</html>

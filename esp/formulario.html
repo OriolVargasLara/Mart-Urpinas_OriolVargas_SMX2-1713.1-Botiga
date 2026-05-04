@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Formulario de compra - SMX2 Juegos. Rellena tus datos y selecciona los juegos que quieres comprar.">
+    <title>Formulario de Compra - SMX2 Juegos</title>
+    <!-- Favicon: subimos dos niveles desde esp/ -->
+    <link rel="icon" href="../imágenes/logo_X.png" type="image/png">
+    <!-- CSS compartido: subimos un nivel desde esp/ -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- ===== CABECERA ===== -->
+    <header>
+        <img src="../imágenes/SMX2.png" alt="Logo SMX2 Juegos" class="header-logo">
+        <div class="header-texto">
+            <h1>SMX2 Juegos</h1>
+            <p>Tu tienda online de videojuegos. Los mejores títulos al mejor precio.</p>
+        </div>
+    </header>
+
+    <!-- ===== NAVEGACIÓN ===== -->
+    <nav>
+        <ul>
+            <li><a href="../index.html">← Volver al catálogo</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== CONTENIDO PRINCIPAL ===== -->
+    <main>
+
+        <div class="formulario-compra">
+
+            <h2>Formulario de Compra</h2>
+
+            <!-- action="#" significa que no envía datos reales (es una práctica) -->
+            <form action="#" method="post">
+
+                <!-- === DATOS PERSONALES === -->
+                <div class="grupo-campo">
+                    <label for="nombre">Nombre *</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="apellidos">Apellidos *</label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Escribe tus apellidos" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="email">Correo electrónico *</label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="612 345 678">
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="direccion">Dirección de envío *</label>
+                    <input type="text" id="direccion" name="direccion" placeholder="Calle, número, piso..." required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="ciudad">Ciudad *</label>
+                    <input type="text" id="ciudad" name="ciudad" placeholder="Tu ciudad" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="cp">Código postal *</label>
+                    <input type="text" id="cp" name="cp" placeholder="08001" required>
+                </div>
+
+                <!-- === SELECCIÓN DE JUEGOS (CHECKBOXES) ===
+                     El usuario marca los juegos que quiere comprar.
+                     Actualiza el nombre y precio con los de tus juegos reales. -->
+                <div class="grupo-checkboxes">
+                    <p>Selecciona los juegos que quieres comprar: *</p>
+
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="juegos" value="juego1">
+                        Grand Theft Auto V — 19,99 €
+                    </label>
+
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="juegos" value="juego2">
+                        Minecraft — 29,99 €
+                    </label>
+
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="juegos" value="juego3">
+                        Super Mario Odyssey — 59,99 €
+                    </label>
+
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="juegos" value="juego4">
+                        The Last Of Us — 59,99 €
+                    </label>
+
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="juegos" value="juego5">
+                        Hollow Knight — 14,79 €
+                    </label>
+
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="juegos" value="juego6">
+                        Elden Ring — 59,99 €
+                    </label>
+
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="juegos" value="juego7">
+                        Cyberpunk 2077 — 59,99 €
+                    </label>
+
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="juegos" value="juego8">
+                        R.E.P.O — 9,49 €
+                    </label>
+
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="juegos" value="juego9">
+                        Asseto Corsa — 19,99 €
+                    </label>
+
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="juegos" value="juego10">
+                        Phasmophobia — 18,99 €
+                    </label>
+
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="juegos" value="juego11">
+                        Geometry Dash — 4,99 €
+                    </label>
+
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="juegos" value="juego12">
+                        Hitman World of Assasination — 29,99 €
+                    </label>
+
+                </div>
+
+                <!-- === MÉTODO DE PAGO === -->
+                <div class="grupo-campo">
+                    <label for="pago">Método de pago *</label>
+                    <select id="pago" name="pago" required>
+                        <option value="">-- Selecciona un método --</option>
+                        <option value="tarjeta">Tarjeta de crédito/débito</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="transferencia">Transferencia bancaria</option>
+                    </select>
+                </div>
+
+                <!-- Botón de envío -->
+                <button type="submit" class="boton-enviar">Confirmar compra</button>
+
+            </form>
+        </div>
+
+    </main>
+
+    <!-- ===== PIE DE PÁGINA ===== -->
+    <footer>
+        <p>&copy; 2025 SMX2 Juegos. Todos los derechos reservados.</p>
+        <!-- Enlace de cambio de idioma -->
+        <p><a href="../cat/formulari.html">🌐 Versió en català</a></p>
+    </footer>
+
+</body>
+
+</html>

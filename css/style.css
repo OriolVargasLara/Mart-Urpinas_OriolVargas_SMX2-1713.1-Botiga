@@ -1,0 +1,394 @@
+/* Archivo de estilos de SMX2 Juegos */
+/* Este archivo lo usan todas las paginas de la web */
+
+/* Quitamos los margenes que pone el navegador por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general de la pagina */
+body {
+    background-color: #0d0d1a;
+    color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+/* Color de los enlaces */
+a {
+    color: #1a7fd4;
+    text-decoration: none;
+}
+
+/* Color de los enlaces cuando pasas el raton por encima */
+a:hover {
+    color: #e01010;
+}
+
+/* Estilo del header (cabecera) */
+header {
+    background-color: #0a0a15;
+    border-bottom: 3px solid #e01010;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Tamaño del logo del header */
+.header-logo {
+    height: 70px;
+}
+
+/* Titulo h1 del header */
+.header-texto h1 {
+    font-size: 1.8rem;
+    color: #f0f0f0;
+}
+
+/* Descripcion del header */
+.header-texto p {
+    font-size: 0.9rem;
+    color: #a0a0b8;
+    margin-top: 4px;
+}
+
+/* Barra de navegacion */
+nav {
+    background-color: #0a0a15;
+    border-bottom: 1px solid #2a2a4a;
+    padding: 10px 20px;
+}
+
+/* Lista de la navegacion */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Enlaces de la navegacion */
+nav ul li a {
+    color: #c0c0d0;
+    font-size: 0.95rem;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+/* Color del enlace de nav cuando pasas el raton */
+nav ul li a:hover {
+    background-color: #e01010;
+    color: white;
+}
+
+/* Zona de contenido principal */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+/* Titulo de cada seccion */
+.seccion-titulo {
+    font-size: 1.4rem;
+    color: #c0c0d0;
+    border-left: 4px solid #e01010;
+    padding-left: 12px;
+    margin-bottom: 25px;
+}
+
+/* Galeria de productos en cuadricula */
+.galeria-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* Cada tarjeta de producto */
+.tarjeta {
+    background-color: #13132b;
+    border: 1px solid #2a2a4a;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Efecto cuando pasas el raton por una tarjeta */
+.tarjeta:hover {
+    border-color: #1a7fd4;
+}
+
+/* Imagen de la tarjeta */
+.tarjeta img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Zona de texto dentro de la tarjeta */
+.tarjeta-info {
+    padding: 12px;
+}
+
+/* Nombre del juego en la tarjeta */
+.tarjeta-nombre {
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: #f0f0f0;
+    margin-bottom: 8px;
+}
+
+/* Precio del juego en la tarjeta */
+.tarjeta-precio {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e01010;
+    margin-bottom: 10px;
+}
+
+/* Boton de ver detalles */
+.boton-ver {
+    display: block;
+    text-align: center;
+    background-color: #e01010;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+
+/* Color del boton ver cuando pasas el raton */
+.boton-ver:hover {
+    background-color: #a80000;
+    color: white;
+}
+
+/* Pagina de detalle del producto */
+.detalle-producto {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Imagen grande en la pagina de detalle */
+.detalle-imagen {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    border: 2px solid #2a2a4a;
+}
+
+/* Zona de informacion en la pagina de detalle */
+.detalle-info {
+    flex: 1;
+    min-width: 250px;
+}
+
+/* Titulo del juego en la pagina de detalle */
+.detalle-info h2 {
+    font-size: 1.6rem;
+    color: #f0f0f0;
+    margin-bottom: 10px;
+}
+
+/* Badge de plataforma en la pagina de detalle */
+.detalle-plataforma {
+    display: inline-block;
+    background-color: #1a7fd4;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+}
+
+/* Descripcion del juego */
+.detalle-descripcion {
+    color: #a0a0b8;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Precio grande en la pagina de detalle */
+.detalle-precio {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e01010;
+    margin-bottom: 20px;
+}
+
+/* Boton de comprar */
+.boton-comprar {
+    display: inline-block;
+    background-color: #e01010;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Color del boton comprar al pasar el raton */
+.boton-comprar:hover {
+    background-color: #a80000;
+    color: white;
+}
+
+/* Caja del formulario de compra */
+.formulario-compra {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Titulo del formulario */
+.formulario-compra h2 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    color: #c0c0d0;
+    border-left: 4px solid #1a7fd4;
+    padding-left: 12px;
+}
+
+/* Cada grupo de campo del formulario */
+.grupo-campo {
+    margin-bottom: 18px;
+}
+
+/* Etiqueta de cada campo */
+.grupo-campo label {
+    display: block;
+    margin-bottom: 6px;
+    color: #a0a0b8;
+    font-size: 0.9rem;
+}
+
+/* Estilo de los campos de texto, select y textarea */
+.grupo-campo input,
+.grupo-campo select,
+.grupo-campo textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #13132b;
+    border: 1px solid #2a2a4a;
+    border-radius: 4px;
+    color: #f0f0f0;
+    font-size: 0.95rem;
+}
+
+/* Cuando el usuario hace clic en un campo */
+.grupo-campo input:focus,
+.grupo-campo select:focus,
+.grupo-campo textarea:focus {
+    outline: none;
+    border-color: #1a7fd4;
+}
+
+/* Seccion de checkboxes */
+.grupo-checkboxes {
+    margin-bottom: 20px;
+}
+
+/* Texto encima de los checkboxes */
+.grupo-checkboxes p {
+    color: #a0a0b8;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+/* Cada checkbox con su texto */
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+    color: #f0f0f0;
+    font-size: 0.9rem;
+}
+
+/* Tamaño de los checkboxes */
+.checkbox-item input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #1a7fd4;
+}
+
+/* Boton de enviar el formulario */
+.boton-enviar {
+    background-color: #1a7fd4;
+    color: white;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Boton enviar al pasar el raton */
+.boton-enviar:hover {
+    background-color: #1260a0;
+}
+
+/* Pie de pagina */
+footer {
+    background-color: #0a0a15;
+    border-top: 3px solid #1a7fd4;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: #a0a0b8;
+    font-size: 0.85rem;
+}
+
+footer p {
+    margin-bottom: 6px;
+}
+
+/* Enlace del footer */
+footer a {
+    color: #1a7fd4;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #e01010;
+}
+
+/* Estilos para movil (pantallas pequeñas) */
+@media (max-width: 600px) {
+
+    /* En movil el header se apila */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 15px;
+    }
+
+    /* Logo mas pequeño en movil */
+    .header-logo {
+        height: 50px;
+    }
+
+    /* Titulo mas pequeño en movil */
+    .header-texto h1 {
+        font-size: 1.3rem;
+    }
+
+    /* Galeria de una columna en movil */
+    .galeria-productos {
+        grid-template-columns: 1fr;
+    }
+
+    /* Imagen del detalle ocupa todo el ancho */
+    .detalle-imagen {
+        max-width: 100%;
+    }
+
+    /* Precio mas pequeño en movil */
+    .detalle-precio {
+        font-size: 1.5rem;
+    }
+}
